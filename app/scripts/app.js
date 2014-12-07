@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/news/:id/', {
+        templateUrl: 'views/news_detail.html',
+        controller: 'NewsDetailCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
