@@ -7,14 +7,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 html,body{
     height: 100%;
 }
-.ng-scope {
-    height: 100%;
-}
 
 /* sidebar */
 #sidebar {
     float: left;
-    width: 400px;
+    width: 485px;
     padding: 10px;
     border: 1px solid #CCC;
     position: fixed;
@@ -31,6 +28,6 @@ html,body{
 /* main */
 #main {
     position: absolute;right: 0;
-    left: 185px;
+    left: 485px;
     float: left;
 }

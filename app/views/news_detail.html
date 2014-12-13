@@ -1,8 +1,16 @@
 <div id="sidebar"r="NewsDetailCntrl">
-    <td>{{contents.id}}</td>
-    <tr ng-repeat="content in contents">
-        <td>{{content.id}}aaa</td>
-    </tr>
+    【記事ID】】{{contents.id}}<br>
+    【記事タイトル】{{contents.title}}<br>
+    【記事リンク】{{contents.url}}<br><br>
+    【記事画像】{{contents.image}}<br><br>
+    <div ng-repeat="comment in contents.comments">
+        <ul>
+            <li>【コメントID】{{comment.id}}</li>
+            <li>【コメント】{{comment.text}}</li>
+            <li>【ユーザー名】{{comment.user.full_name}}</li>
+            <li>【ユーザー画像】{{comment.user.profile_image_url}}</li>
+        </ul>
+    </div>
 </div>
 <div id="main">
     <iframe src="http://www.soccer-king.jp/news/world/esp/20141207/256584.html" width="100%" height="100%"></iframe>
